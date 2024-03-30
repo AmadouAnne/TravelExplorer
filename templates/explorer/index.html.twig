@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Explorer les explorateurs{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h1 class="mt-5 mb-4">Liste des explorateurs</h1>
+
+        <div class="row">
+            {% for explorer in explorers %}
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="{{ asset('images/' ~ explorer.image) }}" class="card-img-top" alt="{{ explorer.nom }}">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ explorer.nom }}</h5>
+                            <p class="card-text">{{ explorer.description }}</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

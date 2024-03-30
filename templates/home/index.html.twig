@@ -1,0 +1,96 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil - TravelExplorer{% endblock %}
+
+{% block body %}
+    <section class="banner position-relative bg-dark py-3">
+        <img src="{{ asset('images/1.jpg') }}" class="img-fluid" alt="Bannière de TravelExplorer">
+        <div class="container position-absolute top-50 start-50 translate-middle text-center text-white">
+            <h1 class="display-4">Bienvenue sur TravelExplorer</h1>
+            <p class="lead">Découvrez et partagez vos expériences de voyage avec la communauté.</p>
+            <div class="mt-4">
+                <a href="{{ path('explorer') }}" class="btn btn-primary me-2">Explorer des Destinations</a>
+                <a href="#" class="btn btn-primary me-2">Planifier Votre Voyage</a>
+                <a href="#" class="btn btn-primary me-2">Témoignages</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <section id="planification" class="plan">
+        <div class="container">
+            <h2>Planifier Votre Voyage</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Trouvez un Hébergement</h5>
+                            <p class="card-text">Trouvez le logement parfait pour votre prochain voyage.</p>
+                            <a href="#" class="btn btn-primary">Trouver un Hôtel</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Réservez une Activité</h5>
+                            <p class="card-text">Découvrez les meilleures activités à faire lors de votre voyage.</p>
+                            <a href="#" class="btn btn-primary">Réserver Maintenant</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Trouvez un Restaurant</h5>
+                            <p class="card-text">Découvrez les meilleurs restaurants locaux pour savourer une délicieuse cuisine.</p>
+                            <a href="#" class="btn btn-primary">Trouver un Restaurant</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials bg-light">
+        <div class="container">
+            <h2>Témoignages</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Superbe Expérience</h5>
+                            <p class="card-text">TravelExplorer m'a aidé à découvrir des destinations incroyables que je n'aurais jamais imaginées.</p>
+                            <p class="card-text"><small class="text-muted">- Alice, Voyageuse Passionnée</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Service Exceptionnel</h5>
+                            <p class="card-text">J'ai été impressionné par la qualité du service et la facilité d'utilisation de TravelExplorer.</p>
+                            <p class="card-text"><small class="text-muted">- Paul, Explorateur Averti</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Incontournable</h5>
+                            <p class="card-text">Je recommande TravelExplorer à tous ceux qui cherchent à vivre des aventures uniques autour du monde.</p>
+                            <p class="card-text"><small class="text-muted">- Sarah, Globe-Trotteuse</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

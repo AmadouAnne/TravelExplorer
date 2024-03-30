@@ -1,0 +1,40 @@
+{# templates/your_template.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Liste des pays d'Afrique{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h1 class="mt-5 mb-4">Liste des pays d'Afrique</h1>
+     <!--   <h1>Visite virtuelle de la Tour Eiffel</h1>
+         Intégration de la visite virtuelle
+        <iframe
+                width="100%"
+                height="600"
+                frameborder="0"
+                style="border:0"
+                src="https://www.google.com/maps/embed?pb=!4v1578569033249!6m8!1m7!1sCAoSLEFGMVFpcE5aM0w5Z0l0a3BRbzVNaG1UVmVZWHRaWWlreHRqdDdUWEZVQnVt!2m2!1d48.8584!2d2.2945!3f276.55!4f-7.069999999999993!5f0.7820865974627469"
+                allowfullscreen
+        ></iframe>
+        -->
+
+        <div class="row">
+            {% for country in countries %}
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ country.name }}</h5>
+                            <p class="card-text">{{ country.description }}</p>
+                            <a href="#" class="btn btn-primary">Voir plus</a>
+                            {# Ajouter le bouton de like #}
+                            <button type="button" class="btn btn-success like-btn" data-country-id="{{ country.id }}">
+                                <i class="bi bi-heart-fill"></i> Like
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
