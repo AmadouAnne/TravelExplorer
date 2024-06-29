@@ -1,2 +1,4 @@
-# Travelexplorer
-# Travelexplorer
+
+Le projet Travel Explorer est une initiative développée dans le cadre de la Licence 2 Informatique à l'Université de La Rochelle. Cette application web novatrice vise à simplifier la planification de voyages en offrant aux utilisateurs une plateforme intuitive et complète pour explorer, planifier et gérer leurs voyages de manière efficace.  
+Travel Explorer repose sur une architecture robuste, combinant le framework Vue.UX pour le frontend et Symfony pour le backend. Cette combinaison de technologies de pointe permet d'offrir une expérience utilisateur fluide et riche en fonctionnalités.  
+L'objectif principal de Travel Explorer est de fournir aux utilisateurs une solution complète pour la planification de leurs voyages, en leur permettant de rechercher des destinations, de planifier des itinéraires détaillés, de gérer leurs réservations et de découvrir de nouvelles expériences de voyage de manière intuitive.
